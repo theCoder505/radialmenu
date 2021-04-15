@@ -1,0 +1,101 @@
+.clock .number {
+    --rotation: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transform: rotate(var(--rotation));
+    font-size: 1.2rem;
+    text-align: center;
+    border: 4px solid;
+    color: white;
+    justify-content: center;
+    display: flex;
+    padding-top: 15px;
+}
+
+
+#triangle {
+    margin-top: 500px;
+    border-top: 100px solid #000;
+    border-right: 100px solid transparent;
+    border-left: 100px solid transparent;
+    z-index: 20;
+    position: relative;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    transform: rotate(49deg);
+}
+
+
+<!-- <li class='unsel circle'>
+                    <label for='unsel' class="clicky menuname">SAFRAN TUNISIE</label>
+                </li> -->
+                <!-- <li class='middle circle'></li> -->
+
+margin-right: 45px;
+line-height: 3.5;        
+
+
+
+
+
+
+
+    shared.addEventListener("click", function () {
+
+        shared.style.backgroundColor = shared.style.backgroundColor === "lightgreen" ? "#1da5c3" : "lightgreen";
+        shared2.style.backgroundColor = shared2.style.backgroundColor === "lightgreen" ? "#1da5c3" : "lightgreen";
+    });    
+    cabin.addEventListener("click", function () {
+
+        cabin.style.backgroundColor = cabin.style.backgroundColor === "lightgreen" ? "#1da5c3" : "lightgreen";
+        cabin2.style.backgroundColor = cabin2.style.backgroundColor === "lightgreen" ? "#1da5c3" : "lightgreen";
+    });    
+
+
+
+    cabin.style.backgroundColor = "#1da5c3";
+    cabin2.style.backgroundColor = "#27D2AB";
+    sed.style.backgroundColor = "#1da5c3";
+    sed1.style.backgroundColor = "#27D2AB";
+    sed2.style.backgroundColor = "#27D2AB";
+    sep.style.backgroundColor = "#1da5c3";
+    sep1.style.backgroundColor = "#27D2AB";
+    sep2.style.backgroundColor = "#27D2AB";
+    seats.style.backgroundColor = "#1da5c3";
+    seats1.style.backgroundColor = "#27D2AB";
+    seats2.style.backgroundColor = "#27D2AB";
+    seats3.style.backgroundColor = "#27D2AB";
+    sao.style.backgroundColor = "#1da5c3";
+    sao1.style.backgroundColor = "#27D2AB";
+    sao2.style.backgroundColor = "#27D2AB";
+    sao3.style.backgroundColor = "#27D2AB";
+
+
+.menunavFirst {
+    display: block;
+    width: 280px;
+    color: white;
+    font-size: 12px;
+}
+
+.menunav {
+    display: block;
+    width: 195px;
+    color: white;
+    font-size: 12px;
+    transform: translate(18%, -124%);
+}
+
+.circle label {
+    font-weight: 700;
+    line-height: 3;
+    font-size: 9px;
+}
+
+.clicky.menuname.safran {
+    font-weight: 100;
+    line-height: 1.5;
+    padding-top: 26%;
+}

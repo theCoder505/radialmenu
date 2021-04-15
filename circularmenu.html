@@ -1,0 +1,544 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Radial/Pie Menu Control EXAMPLE</title>
+
+
+    <style>
+        .menunavFirst .circle,
+        .menunavFirst .circle:before,
+        .menunavFirst .circle:after {
+            border-radius: 50%;
+        }
+
+        .menunavFirst .circle .menunavFirst .menuname:hover {
+            color: white;
+            transition: color 0.menunavFirst .5s ease;
+        }
+
+
+        .menunavFirst {
+            display: block;
+            width: 420px;
+            color: white;
+            font-size: 12px;
+        }
+
+        .menunavFirst ul {
+            position: relative;
+            padding: 50%;
+            max-width: 0;
+            max-height: 0;
+            list-style: none;
+        }
+
+        .menunavFirst .menunav li {
+            position: absolute;
+        }
+
+        .menunavFirst .slice {
+            overflow: hidden;
+            position: absolute;
+            width: 50%;
+            height: 50%;
+            top: 0;
+            left: 0;
+            transform-origin: 100% 100%;
+        }
+
+        /* ------------------------------------------------- */
+        /* ------------------------------------------------- */
+
+
+        .menunavFirst .coconut {
+            transform: rotate(29deg) skewX(32deg);
+        }
+
+        .menunavFirst .vanilla {
+            transform: rotate(89deg) skewX(32deg);
+        }
+
+        .menunavFirst .orange {
+            transform: rotate(110deg) skewX(32deg);
+            border-bottom: 2px solid white;
+        }
+
+        .menunavFirst .orange2 {
+            transform: rotate(130deg) skewX(32deg);
+            border-bottom: 2px solid white;
+        }
+
+        .menunavFirst .almond {
+            transform: rotate(147deg) skewX(32deg);
+            border-bottom: 2px solid white;
+        }
+
+        .menunavFirst .almond2 {
+            transform: rotate(170deg) skewX(32deg);
+            border-bottom: 2px solid white;
+        }
+
+        .menunavFirst .almond3 {
+            transform: rotate(190deg) skewX(32deg);
+            border-bottom: 2px solid white;
+        }
+
+        .menunavFirst .grape {
+            transform: rotate(208deg) skewX(32deg);
+            border-bottom: 2px solid white;
+        }
+
+        .menunavFirst .grape2 {
+            transform: rotate(240deg) skewX(32deg);
+            border-bottom: 2px solid white;
+        }
+
+        .menunavFirst .blackberry {
+            transform: rotate(270deg) skewX(32deg);
+            border-bottom: 2px solid white;
+        }
+
+        .menunavFirst .blackberry2 {
+            transform: rotate(300deg) skewX(32deg);
+            border-bottom: 2px solid white;
+        }
+
+        .menunavFirst .cherry {
+            transform: rotate(330deg) skewX(32deg);
+            border-bottom: 2px solid white;
+        }
+
+        /* ------------------------------------------------- */
+        /* ------------------------------------------------- */
+
+
+        .menunavFirst .slice label {
+            display: block;
+            width: 200%;
+            height: 200%;
+            transform: skew(-32deg) rotate(-79deg);
+            text-align: center;
+        }
+
+
+        /* ------------------------------------------------- */
+        /* ------------------------------------------------- */
+        /* ------------------------------------------------- */
+
+
+        /* Cell background colors */
+
+        .menunavFirst .maingreen label {
+            background: #27D2AB;
+        }
+
+        .menunavFirst .blank label {
+            background: #1da5c3;
+        }
+
+        /* ----------------------------------------- */
+
+        #id11 {
+            display: inline-block;
+            transform: rotate(200deg);
+            line-height: 3;
+            margin-left: 25px;
+        }
+
+        #id4 {
+            display: inline-block;
+            transform: rotate(-70deg);
+            line-height: 4;
+        }
+
+        #id2 {
+            display: inline-block;
+            transform: rotate(-13deg);
+            line-height: 3;
+        }
+
+        #id3 {
+            display: inline-block;
+            transform: rotate(-30deg);
+            line-height: 3;
+        }
+
+
+        #id5 {
+            display: inline-block;
+            transform: rotate(228deg);
+            line-height: 4;
+            margin-left: 27px;
+        }
+
+        #id6 {
+            display: inline-block;
+            transform: rotate(169deg);
+            line-height: 3;
+        }
+
+        #id7 {
+            display: inline-block;
+            line-height: 4;
+        }
+
+        #id8 {
+            display: inline-block;
+            transform: rotate(-50deg);
+            line-height: 4;
+        }
+
+        #id9 {
+            display: inline-block;
+            transform: rotate(-90deg);
+            line-height: 4;
+        }
+
+        #id10 {
+            display: inline-block;
+            transform: rotate(-111deg);
+            line-height: 4;
+        }
+
+        #id12 {
+            display: inline-block;
+            transform: rotate(135deg);
+            line-height: 3;
+        }
+
+
+
+        /* ----------------------------------------- */
+
+
+        .menunavFirst .cabin2 {
+            transform: skew(0deg) rotate(110deg) !important;
+            display: inline-block;
+            margin-left: 85px;
+            line-height: 5;
+        }
+    </style>
+
+
+    <style>
+        .circle,
+        .circle:before,
+        .circle:after {
+            border-radius: 50%;
+        }
+
+        .circle .menuname:hover {
+            color: white;
+            transition: color 0.5s ease;
+        }
+
+        .circlebar {
+            border: 5px solid white
+        }
+
+        .menunav {
+            display: block;
+            width: 320px;
+            color: white;
+            font-size: 12px;
+            transform: translate(13%, -117%);
+        }
+
+        .menunav ul {
+            position: relative;
+            padding: 50%;
+            max-width: 0;
+            max-height: 0;
+            list-style: none;
+        }
+
+        .menunav li {
+            position: absolute;
+        }
+
+        .slice {
+            overflow: hidden;
+            position: absolute;
+            width: 50%;
+            height: 50%;
+            top: 0;
+            left: 0;
+            transform-origin: 100% 100%;
+        }
+
+        /* ------------------------------------------------- */
+        /* ------------------------------------------------- */
+
+
+        .coconut {
+            transform: rotate(30deg) skewX(32deg);
+        }
+
+        .vanilla {
+            transform: rotate(90deg) skewX(32deg);
+        }
+
+        .almond {
+            transform: rotate(150deg) skewX(32deg);
+        }
+
+        .grape {
+            transform: rotate(210deg) skewX(32deg);
+        }
+
+        .blackberry {
+            transform: rotate(270deg) skewX(32deg);
+        }
+
+        .cherry {
+            transform: rotate(330deg) skewX(32deg);
+        }
+
+        /* ------------------------------------------------- */
+        /* ------------------------------------------------- */
+
+
+        .slice label {
+            display: block;
+            width: 200%;
+            height: 200%;
+            transform: skew(-32deg) rotate(-65deg);
+            text-align: center;
+        }
+
+
+        /* ------------------------------------------------- */
+        /* ------------------------------------------------- */
+        /* ------------------------------------------------- */
+
+
+        /* Cell background colors */
+
+
+        .blue label {
+            background-color: #1da5c3;
+        }
+
+
+
+        .circle label {
+            font-weight: 700;
+            line-height: 4;
+        }
+
+        .middle {
+            z-index: 1;
+            top: 15%;
+            left: 15%;
+            width: 70%;
+            height: 70%;
+            text-align: center;
+            background-color: #6D7B92;
+        }
+
+        .unsel {
+            z-index: 2;
+            top: 34%;
+            left: 34%;
+            width: 32%;
+            height: 32%;
+            text-align: center;
+            background-color: #FEA730;
+        }
+
+        .unsel label {
+            display: block;
+            width: 100%;
+            height: 100%;
+            padding-top: 25%;
+        }
+
+        .clicky.menuname.safran {
+            font-weight: 100;
+            line-height: 1.5;
+            padding-top: 35%;
+        }
+
+
+        .menunav #id1 {
+            transform: rotate(33deg);
+            display: inline-block;
+        }
+
+        .menunav #id7 {
+            display: inline-block;
+            transform: rotate(94deg);
+        }
+
+        .menunav #id2 {
+            display: inline-block;
+            transform: rotate(-27deg);
+            line-height: 3;
+        }
+
+        .menunav #id4 {
+            display: inline-block;
+            transform: rotate(-83deg);
+            line-height: 4;
+        }
+
+        .menunav #id5 {
+            display: inline-block;
+            transform: rotate(213deg);
+            line-height: 4;
+            margin-left: 27px;
+        }
+
+        .menunav #id6 {
+            display: inline-block;
+            transform: rotate(153deg);
+            line-height: 3;
+        }
+    </style>
+
+
+    <style>
+        @media screen and (max-width: 900px) {
+
+            .menunavFirst {
+                display: block;
+                width: 350px;
+                color: white;
+                font-size: 12px;
+            }
+
+
+            .menunav {
+                display: block;
+                width: 260px;
+                color: white;
+                font-size: 12px;
+                transform: translate(14%, -120%);
+            }
+
+        }
+
+
+        @media screen and (max-width: 500px) {
+
+            .menunavFirst {
+                display: block;
+                width: 280px;
+                color: white;
+                font-size: 12px;
+            }
+
+            .menunav {
+                display: block;
+                width: 195px;
+                color: white;
+                font-size: 12px;
+                transform: translate(18%, -124%);
+            }
+
+            .circle label {
+                font-weight: 700;
+                line-height: 3;
+                font-size: 9px;
+            }
+
+            .clicky.menuname.safran {
+                font-weight: 100;
+                line-height: 1.5;
+                padding-top: 26%;
+            }
+
+        }
+    </style>
+    </header>
+
+<body>
+
+    <div id="circularRadialMenu">
+
+        <nav class="menunavFirst">
+            <ul class='circle'>
+                <li class='coconut light slice blank'>
+                    <label for='ococonut' class='circle over SHARED2' id="id1"> </label>
+                </li>
+                <li class='vanilla light maingreen slice'>
+                    <label for='ovanilla' class='circle over SEATS1 sft'><span class="over corner2div"
+                            id="id2">SFT</span></label>
+                </li>
+
+                <li class='orange light maingreen slice'>
+                    <label for='oorange' class='circle over SEATS2 cst'><span class="over corner2div"
+                            id="id3">CST</span></label>
+                </li>
+                <li class='orange2 light maingreen slice'>
+                    <label for='oorange2' class='circle over SEATS3 cot'><span class="over corner2div"
+                            id="id8">COT</span></label>
+                </li>
+                <li class='almond light maingreen slice'>
+                    <label for='oalmond' class='circle SA01'><span class="over corner2div" id="id4">ETU</span></label>
+                </li>
+                <li class='almond2 light maingreen slice'>
+                    <label for='oalmond2' class='circle SA02'><span class="over corner2div" id="id9">FIT</span></label>
+                </li>
+                <li class='almond3 light maingreen slice'>
+                    <label for='oalmond3' class='circle SA03'><span class="over corner2div" id="id10">ZTI</span></label>
+                </li>
+                <li class='grape light maingreen slice'>
+                    <label for='ogrape' class='circle SEP1'><span class="over low2div" id="id5">POWER</span></label>
+                </li>
+                <li class='grape2 light maingreen slice'>
+                    <label for='ogrape2' class='circle SEP2'><span class="over low2div" id="id11">SEC</span></label>
+                </li>
+                <li class='blackberry dark maingreen slice'>
+                    <label for='oblackberry' class='circle SED1'><span class="over low2div" id="id6">AST</span></label>
+                </li>
+                <li class='blackberry2 dark maingreen slice'>
+                    <label for='oblackberry2' class='circle SED2'><span class="over low2div"
+                            id="id12">CLT</span></label>
+                </li>
+                <li class='cherry dark maingreen slice sct'>
+                    <label for='ocherry' class='circle CABIN2'><span class="over cabin2" id="id7">SCT</span></label>
+                </li>
+            </ul>
+        </nav>
+
+        <nav class="menunav">
+            <ul class='circle circlebar'>
+                <li class='coconut blue light slice'>
+                    <label for='ococonut' class='circle over SHARED'><span class="over" id="id1">SHARED</span></label>
+                </li>
+                <li class='vanilla blue light slice'>
+                    <label for='ovanilla' class='circle over SEATS'><span class="over" id="id2">SEATS</span></label>
+                </li>
+                <li class='almond blue light slice'>
+                    <label for='oalmond' class='circle SA0'><span class="over" id="id4">SA0</span></label>
+                </li>
+                <li class='grape blue light slice'>
+                    <label for='ogrape' class='circle SEP'><span class="over" id="id5">SEP</span></label>
+                </li>
+                <li class='blackberry blue dark slice'>
+                    <label for='oblackberry' class='circle SED'><span class="over" id="id6">SED</span></label>
+                </li>
+                <li class='cherry blue dark slice'>
+                    <label for='ocherry' class='circle CABIN'><span class="over" id="id7">CABIN</span></label>
+                </li>
+                <li class='unsel circle'>
+                    <label for='unsel' class="clicky menuname safran">SAFRAN <br> TUNISIE</label>
+                </li>
+                <li class='middle circle'></li>
+            </ul>
+        </nav>
+
+    </div>
+
+
+
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>

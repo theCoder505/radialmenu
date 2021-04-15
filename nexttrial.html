@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .clock {
+            width: 300px;
+            height: 300px;
+            background-color: rgba(248, 20, 20, 0.6);
+            border-radius: 50%;
+            position: absolute;
+            transform: translate(17%, 16%);
+        }
+
+        .clock .number {
+            --rotation: 0;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transform: rotate(var(--rotation));
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        .clock .number1 {
+            --rotation: 0deg;
+        }
+
+        .clock .number2 {
+            --rotation: 60deg;
+        }
+
+        .clock .number3 {
+            --rotation: 120deg;
+        }
+
+        .clock .number4 {
+            --rotation: 180deg;
+        }
+
+        .clock .number5 {
+            --rotation: 240deg;
+        }
+
+        .clock .number6 {
+            --rotation: 300deg;
+        }
+
+
+        .circle {
+            position: absolute;
+            height: 180px;
+            width: 180px;
+            top: 50%;
+            left: 50%;
+            background: gray;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            border: 10px solid white;
+        }
+
+
+
+
+
+        .clock2 {
+            width: 400px;
+            height: 400px;
+            background-color: rgba(230, 219, 79, 0.6);
+            border-radius: 50%;
+            position: absolute;
+            z-index: -10;
+        }
+
+        .clock2 .number22 {
+            --rotation: 0;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transform: rotate(var(--rotation));
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        .clock2 .number11 {
+            --rotation: 0deg;
+        }
+
+        .clock2 .number222 {
+            --rotation: 30deg;
+        }
+
+        .clock2 .number33 {
+            --rotation: 60deg;
+        }
+
+        .clock2 .number44 {
+            --rotation: 90deg;
+        }
+
+        .clock2 .number55 {
+            --rotation: 120deg;
+        }
+
+        .clock2 .number66 {
+            --rotation: 150deg;
+        }
+
+        .clock2 .number7 {
+            --rotation: 180deg;
+        }
+
+        .clock2 .number11 {
+            --rotation: 210deg;
+        }
+
+        .clock2 .number8 {
+            --rotation: 240deg;
+        }
+
+        .clock2 .number9 {
+            --rotation: 270deg;
+        }
+
+        .clock2 .number10 {
+            --rotation: 300deg;
+        }
+
+        .clock2 .number11 {
+            --rotation: 330deg;
+        }
+
+        .clock2 .number12 {
+            --rotation: 360deg;
+        }
+
+
+
+
+
+
+
+
+
+        .dashed {
+            width: 300px;
+            height: 300px;
+            background-color: rgba(0, 0, 0, 0.055);
+            border-radius: 50%;
+            color: white;
+            position: absolute;
+            transform: translate(17%, 16%);
+        }
+
+        .dash {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        .dash.dash1 {
+            transform: rotate(40deg);
+            margin-top: -16px;
+            font-size: 55px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="clock">
+
+        <span class="number number1">1</span>
+        <span class="number number2">2</span>
+        <span class="number number3">3</span>
+        <span class="number number4">4</span>
+        <span class="number number5">5</span>
+        <span class="number number6">6</span>
+        <div class="circle"></div>
+
+    </div>
+
+
+
+
+
+    <div class="clock2">
+
+        <div class="number22 number11">1</div>
+        <div class="number22 number222">2</div>
+        <div class="number22 number33">3</div>
+        <div class="number22 number44">4</div>
+        <div class="number22 number55">5</div>
+        <div class="number22 number66">6</div>
+        <div class="number22 number7">7</div>
+        <div class="number22 number8">8</div>
+        <div class="number22 number9">9</div>
+        <div class="number22 number10">10</div>
+        <div class="number22 number11">11</div>
+        <div class="number22 number12">12</div>
+
+    </div>
+
+    <div class="dashed">
+        <div class="dash dash1">|</div>
+        <div class="dash dash2">|</div>
+        <div class="dash dash3">|</div>
+        <div class="dash dash4">|</div>
+        <div class="dash dash5">|</div>
+    </div>
+</body>
+
+</html>

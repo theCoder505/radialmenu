@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RADIAL MENU</title>
+
+    <style>
+        .circleHere {
+            width: 105px;
+            height: 100px;
+            background-color: #000;
+            border-top-left-radius: 100%;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+
+        .circleHere2 {
+            width: 105px;
+            height: 100px;
+            background-color: #d00;
+            border-top-left-radius: 0;
+            border-top-right-radius: 100%;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+            transform: translate(100%, -100%);
+        }
+
+
+        .circleHere3 {
+            width: 105px;
+            height: 100px;
+            background-color: skyblue;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 100%;
+            transform: translate(-21%, -138%) rotate(38deg);
+        }
+
+        .circleHere4 {
+            width: 105px;
+            height: 100px;
+            background-color: yellow;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 90%;
+            border-bottom-left-radius: 0;
+            transform: translate(117%, -242%) rotate(-37deg);
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <div id="sixCircle">
+        <div class="sixcircleClass circleHere"> </div>
+        <div class="sixcircleClass circleHere2"> </div>
+        <div class="sixcircleClass circleHere3"> </div>
+        <div class="sixcircleClass circleHere4"> </div>
+        <div class="sixcircleClass circleHere5"> </div>
+        <div class="sixcircleClass circleHere6"> </div>
+    </div>
+
+</body>
+
+</html>

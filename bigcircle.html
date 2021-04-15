@@ -1,0 +1,364 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>BIG CIRCLE | MENU </title>
+
+
+
+    <style>
+        .menunavFirst .circle,
+        .menunavFirst .circle:before,
+        .menunavFirst .circle:after {
+            border-radius: 50%;
+        }
+
+        .menunavFirst .circle .menunavFirst .menuname:hover {
+            color: white;
+            transition: color 0.menunavFirst .5s ease;
+        }
+
+
+        .menunavFirst  {
+            display: block;
+            width: 400px;
+            color: white;
+            font-size: 12px;
+        }
+
+        .menunavFirst ul {
+            position: relative;
+            padding: 50%;
+            max-width: 0;
+            max-height: 0;
+            list-style: none;
+        }
+
+        .menunavFirst .menunav li {
+            position: absolute;
+        }
+
+        .menunavFirst .slice {
+            overflow: hidden;
+            position: absolute;
+            width: 50%;
+            height: 50%;
+            top: 0;
+            left: 0;
+            transform-origin: 100% 100%;
+        }
+
+        /* ------------------------------------------------- */
+        /* ------------------------------------------------- */
+
+
+        .menunavFirst .coconut {
+            transform: rotate(30deg) skewX(32deg);
+        }
+
+        .menunavFirst .vanilla {
+            transform: rotate(90deg) skewX(32deg);
+        }
+
+        .menunavFirst .orange {
+            transform: rotate(110deg) skewX(32deg);
+            border-bottom: 2px solid white;
+        }
+
+        .menunavFirst .orange2 {
+            transform: rotate(130deg) skewX(32deg);
+            border-bottom: 2px solid white;
+        }
+
+        .menunavFirst .almond {
+            transform: rotate(150deg) skewX(32deg);
+            border-bottom: 2px solid white;
+        }
+
+        .menunavFirst .almond2 {
+            transform: rotate(170deg) skewX(32deg);
+            border-bottom: 2px solid white;
+        }
+
+        .menunavFirst .almond3 {
+            transform: rotate(190deg) skewX(32deg);
+            border-bottom: 2px solid white;
+        }
+
+        .menunavFirst .grape {
+            transform: rotate(210deg) skewX(32deg);
+            border-bottom: 2px solid white;
+        }
+
+        .menunavFirst .grape2 {
+            transform: rotate(240deg) skewX(32deg);
+            border-bottom: 2px solid white;
+        }
+
+        .menunavFirst .blackberry {
+            transform: rotate(270deg) skewX(32deg);
+            border-bottom: 2px solid white;
+        }
+
+        .menunavFirst .blackberry2 {
+            transform: rotate(300deg) skewX(32deg);
+            border-bottom: 2px solid white;
+        }
+
+        .menunavFirst .cherry {
+            transform: rotate(330deg) skewX(32deg);
+            border-bottom: 2px solid white;
+        }
+
+        /* ------------------------------------------------- */
+        /* ------------------------------------------------- */
+
+
+        .menunavFirst .slice label {
+            display: block;
+            width: 200%;
+            height: 200%;
+            transform: skew(-32deg) rotate(-79deg);
+            text-align: center;
+        }
+
+
+        /* ------------------------------------------------- */
+        /* ------------------------------------------------- */
+        /* ------------------------------------------------- */
+
+
+        /* Cell background colors */
+        .menunavFirst .coconut label,
+        .menunavFirst .ococonut:checked~nav .menunavFirst .unsel {
+            background: #D0D0D0;
+        }
+
+        .menunavFirst .vanilla label,
+        .menunavFirst .ovanilla:checked~nav .menunavFirst .unsel {
+            background: #e6e600;
+        }
+
+        .menunavFirst .orange label,
+        .menunavFirst .oorange:checked~nav .menunavFirst .unsel {
+            background: #ffb038;
+        }
+
+        .menunavFirst .orange2 label,
+        .menunavFirst .oorange2:checked~nav .menunavFirst .unsel {
+            background: #000000;
+        }
+
+        .menunavFirst .almond label,
+        .menunavFirst .oalmond:checked~nav .menunavFirst .unsel {
+            background: #d3a573;
+        }
+
+        .menunavFirst .almond2 label,
+        .menunavFirst .oalmond2:checked~nav .menunavFirst .unsel {
+            background: #80e6f3;
+        }
+
+        .menunavFirst .almond3 label,
+        .menunavFirst .oalmond3:checked~nav .menunavFirst .unsel {
+            background: #02a702;
+        }
+
+        .menunavFirst .grape label,
+        .menunavFirst .ogrape:checked~nav .menunavFirst .unsel {
+            background: #ace600;
+        }
+
+        .menunavFirst .grape2 label,
+        .menunavFirst .ogrape2:checked~nav .menunavFirst .unsel {
+            background: #6b6b6b;
+        }
+
+        .menunavFirst .blackberry label,
+        .menunavFirst .oblackberry:checked~nav .menunavFirst .unsel {
+            background: #cc0099;
+        }
+
+        .menunavFirst .blackberry2 label,
+        .menunavFirst .oblackberry2:checked~nav .menunavFirst .unsel {
+            background: #fffb00;
+        }
+
+        .menunavFirst .cherry label,
+        .menunavFirst .ocherry:checked~nav .menunavFirst .unsel {
+            background: #ff0000;
+        }
+
+
+        .menunavFirst .maingreen label,
+        .menunavFirst .maingreen:checked~nav .menunavFirst .unsel {
+            background: #27D2AB;
+        }
+
+        .menunavFirst .blank label,
+        .menunavFirst .blank:checked~nav .menunavFirst .unsel {
+            background: #1da5c3;
+        }
+
+        /* ----------------------------------------- */
+
+        #id11 {
+            display: inline-block;
+            transform: rotate(200deg);
+            line-height: 3;
+            margin-left: 25px;
+        }
+
+        #id4 {
+            display: inline-block;
+            transform: rotate(-70deg);
+            line-height: 4;
+        }
+
+        #id2 {
+            display: inline-block;
+            transform: rotate(-13deg);
+            line-height: 3;
+        }
+
+        #id3 {
+            display: inline-block;
+            transform: rotate(-30deg);
+            line-height: 3;
+        }
+
+
+        #id5 {
+            display: inline-block;
+            transform: rotate(228deg);
+            line-height: 4;
+            margin-left: 27px;
+        }
+
+        #id6 {
+            display: inline-block;
+            transform: rotate(169deg);
+            line-height: 3;
+        }
+
+        #id7 {
+            display: inline-block;
+            line-height: 4;
+        }
+
+        #id8 {
+            display: inline-block;
+            transform: rotate(-50deg);
+            line-height: 4;
+        }
+
+        #id9 {
+            display: inline-block;
+            transform: rotate(-90deg);
+            line-height: 4;
+        }
+
+        #id10 {
+            display: inline-block;
+            transform: rotate(-111deg);
+            line-height: 4;
+        }
+
+        #id12 {
+            display: inline-block;
+            transform: rotate(135deg);
+            line-height: 3;
+        }
+
+
+
+        /* ----------------------------------------- */
+
+
+        .menunavFirst .cabin2 {
+            transform: skew(0deg) rotate(110deg) !important;
+            display: inline-block;
+            margin-left: 85px;
+            line-height: 5;
+        }
+
+        #blocker{
+            width: 50px;
+            height: 50px;
+            padding: 50px;
+            background-color: red;
+            border: 5px solid black;
+            transform: translate(75%, -186%)
+        }
+    </style>
+
+    </header>
+
+<body>
+
+
+
+
+    <nav class="menunavFirst">
+        <ul class='circle'>
+            <li class='coconut light slice blank'>
+                <label for='ococonut' class='circle over' id="id1"> </label>
+            </li>
+            <li class='vanilla light maingreen slice'>
+                <label for='ovanilla' class='circle over sft'><span class="over corner2div" id="id2">SFT</span></label>
+            </li>
+
+            <li class='orange light maingreen slice'>
+                <label for='oorange' class='circle over'><span class="over corner2div" id="id3">CST</span></label>
+            </li>
+            <li class='orange2 light maingreen slice'>
+                <label for='oorange2' class='circle over'><span class="over corner2div" id="id8">COT</span></label>
+            </li>
+            <li class='almond light maingreen slice'>
+                <label for='oalmond' class='circle'><span class="over corner2div" id="id4">ETU</span></label>
+            </li>
+            <li class='almond2 light maingreen slice'>
+                <label for='oalmond2' class='circle'><span class="over corner2div" id="id9">FIT</span></label>
+            </li>
+            <li class='almond3 light maingreen slice'>
+                <label for='oalmond3' class='circle'><span class="over corner2div" id="id10">ZTI</span></label>
+            </li>
+            <li class='grape light maingreen slice'>
+                <label for='ogrape' class='circle'><span class="over low2div" id="id5">POWER</span></label>
+            </li>
+            <li class='grape2 light maingreen slice'>
+                <label for='ogrape2' class='circle'><span class="over low2div" id="id11">SEC</span></label>
+            </li>
+            <li class='blackberry dark maingreen slice'>
+                <label for='oblackberry' class='circle'><span class="over low2div" id="id6">AST</span></label>
+            </li>
+            <li class='blackberry2 dark maingreen slice'>
+                <label for='oblackberry2' class='circle'><span class="over low2div" id="id12">CLT</span></label>
+            </li>
+            <li class='cherry dark maingreen slice'>
+                <label for='ocherry' class='circle sct'><span class="over cabin2" id="id7">SCT</span></label>
+            </li>
+        </ul>
+    </nav>
+
+<div id="blocker"></div>
+
+
+<script>
+
+document.querySelector(".sft").addEventListener("click", function(){
+    alert("clicked sft");
+});
+document.querySelector(".sct").addEventListener("click", function(){
+    alert("clicked sct");
+});
+</script>
+
+
+
+</body>
+
+</html>
